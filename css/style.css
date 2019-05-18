@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+*{ /*coringa*/
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+  background-color: #f2f2f2;
+}
+
+.container{
+  max-width: 1200px;
+  margin: 20px auto;
+  border: 1px solid #ccc;
+  /*padding: 20px; para manter um card ao lado do outro*/
+  display: flex;
+  flex-wrap: wrap; /*ele pode quebrar os cards para baixo*/
+  min-height: 100vh; /*altura minima*/
+  justify-content: space-around; /*deixa um espaço na coluna entre os cards - igual margin do .card*/
+  /*align-items: flex-start; /*volta pro tamanho normal e fica mais pra cima - se orienta por cima*/
+  /*align-items: flex-end; /*volta pro tamanho normal e fica mais pra baixo - se orienta por baico*/
+  align-items: center; /* */
+}
+
+.card{
+  display: flex;
+  border: 1px solid #ccc;
+  background-color: white;
+  margin: 20px 0; /*se não tiver margin as caixas ficam grudadas - espaçamento e tamanho dos elementos*/
+  width: 559px;
+  /*flex-wrap: wrap; /*ele pode quebrar os cards para o lado*/
+}
+
+.card .img img{ /*para alterar o tamanho da imagem*/
+  width: 150px;
+}
+
+.card .img .social img{
+  width: 30px;
+}
+
+.card .text button{
+  background-color: gray;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  text-transform: uppercase;
+}
+
+.card .img {
+  padding: 10px;
+  display: flex;
+  justify-content: center; /*na horizontal ele vai ficar centralizado*/
+  flex-wrap: wrap; /*pode quebrar entre social e img*/
+  align-items: center; /*alinhar centro vertical*/
+}
+
+.card .text{
+  padding: 10px;
+}
